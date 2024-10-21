@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Portfolio by Joshua CARAAN</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -63,13 +63,13 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/about-pic.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<p>My name is Joshua Caraan. I hold a Bachelors Degree in Information Technolgy from La Consolacion College-Tanauan. Over the years, I have worked on various projects that have allowed me to develop a deep understanding of backend technologies and best practices. My academic background provided me with the theoretical knowledge and practical skills </p>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form id="send-email" method="post" action="https://formspree.io/f/xzzbzznp">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -356,6 +356,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					// Reset the form on page load
+					document.getElementById('send-email').reset();
+				});
+			</script>
 	</body>
 </html>
